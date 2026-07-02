@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Inputs</title>
+</head>
+<body>
+    <h2>Job Application Form</h2>
+
+    <form action="#">
+        <label for="fullname">Full name:</label>
+        <input type="text " name="full name" placeholder="Enter your full name" id="fullname" required>
+
+        <br><br>
+
+
+        <lable for="email">Email address:</lable>
+        <input type="email" name="email" placeholder="Enter your email address" id="email">
+
+
+        <br><br>
+
+<lable for="password">Password:</lable>
+        <input type="password" name="password" placeholder="Enter your password" id="password" required minlength="8" maxlength="16">
+
+<br><br>    
+
+<lable for="phone">Phone number:</lable>
+        <input type="tel" name="phone" placeholder="Enter your phone number" id="phone" maxlength="10" required minlength="10">
+
+
+        <br><br>
+
+        <lable for="dob">Date of birth:</lable>
+        <input type="datetime-local" name="dob" placeholder="Enter your date of birth" id="dob">
+
+        <br><br>
+
+        <lable for="age">Age:</lable>
+        <input type="number" name="age" placeholder="Enter your age" id="age" min="18" max="60">
+
+        <br><br>
+
+        <label for="image">Profile Image:</label>
+        <input type="file" name="image" id="image" accept=".png, .jpg, .jpeg" multiple>
+
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id ="male"> <label for="male">Male</label>
+        <input type="radio" name="gender" id ="female"> <label for="female">Female</label>
+        <input type="radio" name="gender" id ="other"> <label for="other">Other</label>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
