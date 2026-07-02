@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novell Services Login</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <h1>Novell Services Login </h1>
+
+
+
+
+    <form action="#">
+
+        <tr>
+            <td><label for="username">Username:</label></td>
+            <td><input type="text" name="username" id="username" required></td>
+        </tr>
+        <br><br>
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" name="password" id="password" minlength="8" maxlength="16"></td>
+        </tr>
+
+        <br><br>
+
+        <tr>
+            <td><label for="city">City Of Employment:</label></td>
+            <td><input type="text" name="city" id="city"></td>
+        </tr>
+
+        <br><br>
+
+        <tr>
+            <td><label for="web server">Web Server:</label></td>
+            <td><select name="web server" id="web server"></td>
+            <option>--Select Web Server--</option>
+            <option value="server 1">Server 1</option>
+            <option value="server 2">Server 2</option>
+            <option value="server 3">Server 3</option>
+            <option value="server 4">Server 4</option>
+            </select>
+        </tr>
+
+        <br><br>
+        <tr>
+
+            <td><label for="Please Specify Your Role">Please Specify Your Role:</label></td>
+            <br><br>
+            <td><input type="radio" name="role" id="admin" value="admin"> <label for="admin">Admin</label></td>
+            <br><br>
+            <td><input type="radio" name="role" id="user" value="user"> <label for="user">User</label></td>
+            <br><br>
+            <td><input type="radio" name="role" id="guest" value="guest"> <label for="guest">Guest</label></td>
+            <br><br>
+            <td><input type="radio" name="role" id="other" value="other"> <label for="other">Other</label></td>
+
+        </tr>
+
+        <br><br>
+
+        <tr>
+
+            <td><label for="Single Sign-on to the following">Single Sign-on to the following:</label></td>
+            <br><br>
+            <td><input type="checkbox" name="Mail" id="Mail" value="Mail"> <label for="Mail">Mail</label></td>
+            <br><br>
+            <td><input type="checkbox" name="Pay Roll" id="Pay Roll" value="Pay Roll"> <label for="Pay Roll">Pay
+                    Roll</label></td>
+            <br><br>
+            <td><input type="checkbox" name="Self-Service" id="Self-Service" value="Self-Service"> <label
+                    for="Self-Service">Self-Service</label></td>
+
+        </tr>
+
+        <br><br>
+
+        <button type="submit" value="Login">Login</button>
+        <button type="reset" value="Reset">Reset</button>
+    </form>
+
+
+</body>
+
+</html>
