@@ -15,7 +15,7 @@
         <br><br>
 
 
-        <lable for="email">Email address:</lable>
+        <label for="email">Email address:</label>
         <input type="email" name="email" placeholder="Enter your email address" id="email">
 
 
@@ -48,11 +48,24 @@
         <br><br>
 
         <label for="gender">Gender:</label>
-        <input type="radio" name="gender" id ="male"> <label for="male">Male</label>
-        <input type="radio" name="gender" id ="female"> <label for="female">Female</label>
-        <input type="radio" name="gender" id ="other"> <label for="other">Other</label>
+        <input type="radio" name="gender" id ="male" value="male"> <label for="male">Male</label>
+        <input type="radio" name="gender" id ="female" value="female"> <label for="female">Female</label>
+        <input type="radio" name="gender" id ="other" value="other"> <label for="other">Other</label>
 
         <br><br>
+
+        <label ="country">Country:</label>
+        <select name="country" id="country">
+            <option value="in">India </option>
+            <option value="us">United States </option>
+            <option value="uk">United Kingdom   </option>
+        </select>   
+
+            <br><br>
+
+            <input type="checkbox" name="terms" id="terms" required> <label for="terms">I agree to the terms and conditions</label>
+
+            <br><br>
 
         <button type="submit">Submit</button>
 
