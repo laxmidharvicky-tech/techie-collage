@@ -1,0 +1,13 @@
+.container{
+    background-color: grey;
+    height: 60vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: 100px 100px 100px;*/
+  /*gap: 10px 10px;*/
+}
+.box{
+   color: white;
+   font-family: 10rem;
+}
