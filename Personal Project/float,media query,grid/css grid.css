@@ -1,13 +1,16 @@
-.container{
-    background-color: grey;
-    height: 60vh;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /*grid-template-rows: 100px 100px 100px;*/
-  /*gap: 10px 10px;*/
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.box{
-   color: white;
-   font-family: 10rem;
+.outer-container{
+  border-radius: 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 3px 3px 15px black;
+}
+.grid-container{
+  border: 1px solid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  
 }
