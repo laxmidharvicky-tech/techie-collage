@@ -1,2 +1,0 @@
-# techie-collage
-collage project
