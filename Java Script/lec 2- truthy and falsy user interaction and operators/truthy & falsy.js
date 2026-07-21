@@ -3,3 +3,9 @@ if(0){
 }else{
     console.log(2)
 }
+
+if(null){
+console.log(2)
+}else{
+    console.log(3)
+}
