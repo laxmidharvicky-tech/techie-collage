@@ -1,10 +1,8 @@
-//function declaration.
-function hello(){
-    console.log("Hello World");
+var a = 20;
+console.log(a);
+function sum(a, b) {
+var total = a+b;
+return total;
 }
-
-function greet (a,b){
-    console.log(a);
-    b();
-}
-greet("good mornig",hello)
+var c = sum(5,4);
+console.log(c);
