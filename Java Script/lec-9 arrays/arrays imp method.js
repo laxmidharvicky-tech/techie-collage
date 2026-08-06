@@ -5,7 +5,7 @@
 
 // for(let i = 0; i< number.length; i++) {
 //   console.log(number[i])
-// } 
+// }
     // Function Declaration
 
 // number.forEach(function print(num,idx,arr){
@@ -54,7 +54,7 @@
 //     {
 //         id:2,
 //         name:"Rohit sahoo",
-//         salary: 20000   
+//         salary: 20000
     
 //     },
 //     {
@@ -174,13 +174,44 @@
 // const find = products.findIndex(products => products.id == 2)
 // console.log(find)
 
-const students = [
-  { name: "A", marks: 80 },
-  { name: "B", marks: 45 },
-  { name: "C", marks: 60 }
-];
-const findpila = students.find(students => students.name == "C")
-console.log(findpila)
+// const students = [
+//   { name: "A", marks: 80 },
+//   { name: "B", marks: 45 },
+//   { name: "C", marks: 60 }
+// ];
+// const findpila = students.find(students => students.name == "C")
+// console.log(findpila)
 
-const findpilaFOR = students.findIndex(students => students.name == "C")
-console.log(findpilaFOR)
+// const findpilaFOR = students.findIndex(students => students.name == "C")
+// console.log(findpilaFOR)
+
+//======================= reduce method =====================================
+
+// const numbers=[10,12,15,18,25]
+// const findnum =numbers.reduce((total,value,index) =>{
+//     return total*=value
+// },)
+// console.log(findnum)
+
+const users = [
+    {
+        id: 1,
+        name: "sarthak",
+        age:20
+    },
+    {
+        id: 2,
+        name: "amit",
+        age:26
+    },
+    {
+        id: 3,
+        name: "nikhil",
+        age: 28
+    }
+
+]
+
+const totalage = users.reduce((prev, curr) => prev + curr.age, 0)
+console.log("total age ", totalage)
+console.log("average age",totalage/users.length)
