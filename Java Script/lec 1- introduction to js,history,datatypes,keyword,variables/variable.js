@@ -1,4 +1,4 @@
-/*let a =101
+let a =101
 console.log(a)
 console.log(typeof a)
 
@@ -8,18 +8,18 @@ console.log(typeof b)
 
 var c ='String'
 console.log(c)
-console.log(typeof c)*/
+console.log(typeof c)
 
-const student = {
-fullname:"vicky",
-age:28,
-subjectname:"java",
-home:"jagatsinghpur",
+// const student = {
+// fullname:"vicky",
+// age:28,
+// subjectname:"java",
+// home:"jagatsinghpur",
 
-};
-student["fullname"] = "laxmidhar"
-console.log(student["fullname"]);
+// };
+// student["fullname"] = "laxmidhar"
+// console.log(student["fullname"]);
 
-const fullname = "vicky";
-const fillname = "laxmi"
-console.log(fullname);
+// const fullname = "vicky";
+// const fillname = "laxmi"
+// console.log(fullname);
