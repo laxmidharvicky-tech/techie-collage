@@ -107,10 +107,10 @@
 // const fstd = students.find((students) => students.id === 2)
 // console.log(fstd)
 
-// const employees = [ 
-// { name: "Amit", salary: 25000 }, 
-// { name: "Rahul", salary: 30000 }, 
-// { name: "Neha", salary: 35000 } 
+// const employees = [
+// { name: "Amit", salary: 25000 },
+// { name: "Rahul", salary: 30000 },
+// { name: "Neha", salary: 35000 }
 // ];
 
 
@@ -118,6 +118,45 @@
 // console.log(totalsalry)
 
 
-const totalSalary = employees.reduce((total, employee) => total + employee.salary, 0);
+// const totalSalary = employees.reduce((total, employee) => total + employee.salary, 0);
 
-console.log(totalSalary); 
+// console.log(totalSalary);
+
+// const numbers = [10, 20, 30, 40, 50];
+// function countavg(arr) {
+//     const findavg = numbers.reduce((result, value, index) => result += value)
+//     return findavg / arr.length;
+// }
+// const average = countavg(numbers)
+// console.log(average)
+
+// const numbers = [10, 20, 10, 30, 20, 40];
+
+// const rmv = numbers.filter((value, index) => numbers.indexOf(value) === index)
+// console.log(rmv)
+
+// const numbers = [1, 2, 3, 4, 5];
+// const sqr = numbers.map((value) => value *value)
+// console.log(sqr)
+
+// const numbers = [20, 65, 40, 80, 90, 30];
+// const findnum = numbers.filter((value) => value > 50)
+// console.log(findnum)
+
+// const students = [
+//     { id: 1, name: "Amit" },
+//     { id: 2, name: "Rahul" },
+//     { id: 3, name: "Neha" }
+// ];
+// const findid = students.find((students) => students.id === 2)
+// console.log(findid)
+
+// const employees = [
+//     { name: "Amit", salary: 25000 },
+//     { name: "Rahul", salary: 30000 },
+//     { name: "Neha", salary: 35000 }
+// ];
+// const totalsal = employees.reduce((total,employee) => total + employee.salary,0)
+// console.log(totalsal)
+
+// const totalSalary = employees.reduce((total, employee) => total + employee.salary, 0);
