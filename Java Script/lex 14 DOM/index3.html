@@ -1,0 +1,95 @@
+<form
+  action="https://formspree.io/f/mzepkgwl"
+  method="POST"
+  class="space-y-5"
+>
+  <!-- Name -->
+  <div>
+    <label for="name" class="mb-2 block text-sm font-medium text-white">
+      Full Name
+    </label>
+
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter your name"
+      required
+      class="w-full rounded-lg border border-gray-700 bg-gray-900 px-4 py-3 text-white outline-none focus:border-lime-400"
+    />
+  </div>
+
+  <!-- Email -->
+  <div>
+    <label for="email" class="mb-2 block text-sm font-medium text-white">
+      Email
+    </label>
+
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email"
+      required
+      class="w-full rounded-lg border border-gray-700 bg-gray-900 px-4 py-3 text-white outline-none focus:border-lime-400"
+    />
+  </div>
+
+  <!-- Phone -->
+  <div>
+    <label for="phone" class="mb-2 block text-sm font-medium text-white">
+      Phone Number
+    </label>
+
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      placeholder="Enter your phone number"
+      required
+      class="w-full rounded-lg border border-gray-700 bg-gray-900 px-4 py-3 text-white outline-none focus:border-lime-400"
+    />
+  </div>
+
+  <!-- Program -->
+  <div>
+    <label for="program" class="mb-2 block text-sm font-medium text-white">
+      Choose Program
+    </label>
+
+    <select
+      id="program"
+      name="program"
+      class="w-full rounded-lg border border-gray-700 bg-gray-900 px-4 py-3 text-white outline-none focus:border-lime-400"
+    >
+      <option value="Strength Training">Strength Training</option>
+      <option value="Weight Loss">Weight Loss</option>
+      <option value="Personal Training">Personal Training</option>
+      <option value="Cardio">Cardio</option>
+    </select>
+  </div>
+
+  <!-- Message -->
+  <div>
+    <label for="message" class="mb-2 block text-sm font-medium text-white">
+      Message
+    </label>
+
+    <textarea
+      id="message"
+      name="message"
+      rows="5"
+      placeholder="Tell us what you are looking for..."
+      required
+      class="w-full rounded-lg border border-gray-700 bg-gray-900 px-4 py-3 text-white outline-none focus:border-lime-400"
+    ></textarea>
+  </div>
+
+  <!-- Submit -->
+  <button
+    type="submit"
+    class="w-full rounded-lg bg-lime-400 px-6 py-3 font-bold text-black transition hover:bg-lime-300"
+  >
+    JOIN NOW
+  </button>
+</form>

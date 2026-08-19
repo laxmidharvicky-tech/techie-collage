@@ -51,9 +51,17 @@
 // console.dir(firstImageById)
 
 
-const firstImage = document.querySelector('#first-image')
-console.log("first image", firstImage)
+// const firstImage = document.querySelector('#first-image')
+// console.log("first image", firstImage)
 
-const images = document.querySelectorAll('.css-images')
-console.log("images", images)
-console.log("2nd image", images[1])
+// const images = document.querySelectorAll('.css-images')
+// console.log("images", images)
+// console.log("2nd image", images[1])
+
+// function changeText() {
+//     var txt = document.getElementsByTagName("h1")[0]
+//     txt.textContent = "I Love JavaScript"
+//     console.dir(txt)
+// };
+// let name = document.getElementsByTagName("h2")
+// console.log(name)
