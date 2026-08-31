@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 </head>
-<body>
-    <h1>hello</h1>
+<body style="font-family: cursive;">
+  <h1>Welcome To The World Of React</h1>
 
-    <div id="root">
+  <div id="root"></div>
 
-        <script>
-           
-            const root = document.querySelector("#root")
- //to create a react element (react element is a javascript object)
-            // React.creareElement()  //tag,props(attributes),children
+  <script>
+//     const root = document.querySelector("#root")
 
-            const h2 = React.createElement("h2",{},"hello react")
+//     // To create a React Element (React Element is a Javascript Object)
+//     // React.createElement() // tag, props(attributes), children
+//     const h2 = React.createElement("h2", {}, "Hello React")
 
-          // for rendering the react element we need a starting position
+// //     const h3 = {
+// //     //   "$$typeof": Symbol('react.element'),
+// //     "type": "h2",
+// //     "key": null,
+// //     "ref": null,
+// //     "props": {
+// //         "children": "Hello React"
+// //     },
+// //     "_owner": null,
+// //     "_store": {}
+// // }
 
-          ReactDOM.createRoot(root).render(h2)
-        </script>
-    </div>
+//     // For Rendering the React Element we need a starting position
+//     ReactDOM.createRoot(root).render(h2)
+// ===============================
+
+// const root = document.querry selector(root)
+const h1 = React.createElement("h1",{className:'heading-1'},"Hello react")
+
+const h2 = React.createElement("h2",{
+    className:'heading-2',
+    style:{
+        backgroundcolor: 'red',
+        color:'yellow',
+        textDecoration: 'underline',
+    }
+},"welcome to react")
+
+const parentDiv = React.createElement('div',{},h1,h2)
+
+// create a root (starting position)
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(parentDiv)
+  </script>
 </body>
 </html>
