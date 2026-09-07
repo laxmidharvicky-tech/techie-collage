@@ -1,10 +1,11 @@
 import Profile from "./product.jsx"
+import Case from "./Practice2.jsx"
 
 function App() {
 
   return (
     <>
-      <Profile/>
+      <Case/>
       </>
   )
 }
