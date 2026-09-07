@@ -1,20 +1,70 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 function App() {
-  const [name, setName] = useState("")
-  const[output,setOutput] = useState("")
+  // let count = 0
+  // [intial value, setState function] <- state <- useState(initial value)
+  const state = useState(12)  
+  // console.log("///////", state)
+  // console.log("///////", state[0])
+  // console.log("///////", state[1])
+  const [count, setCount] = state
+  console.log("App component", count)
 
-  function onHandel() {
-  setOutput(name)
-}
-  
+  function increment() {
+    // count++;
+    // console.log("increasing count", count)
+    // state[0]++
+    // state[1](state[0]++)
+    // console.log("increasing state", state[0])
+    // setCount(count++)
+    // setCount(count+1)
+    // console.log("increasing state", count)
+    
+    // setCount(count + 1)
+    // setCount(count + 1)
+    // setCount(count + 1)
+    // console.log("increasing state", count)
+
+    // setCount((prevState) => {
+    //   console.log("prevstate is", prevState)
+    //   console.log("count is", count)
+    //   return prevState + 1
+    // })
+    // setCount((prevState) => {
+    //   console.log("prevstate:-2 is", prevState)
+    //   console.log("count:-2 is", count)
+    //   return prevState + 1
+    // })
+    // setCount((prevState) => {
+    //   console.log("prevstate:-3 is", prevState)
+    //   console.log("count:-3 is", count)
+    //   return prevState + 1
+    // })
+
+    setCount(prevState => prevState + 1)
+    setCount(prevState => prevState + 1)
+    setCount(prevState => prevState + 1)
+  }
+
+  const decrease = () => {
+    setCount(count == 0 ? 0 : count-1)
+
+    // If the state is reassigned with the same value then the component won't be re-rendered
+    // eg: if the state value is 0 and we try to re-assign 0 again then the component won't be rendered due to React intelligence. On the other hand if we assign any other value instead of 0 React will re-render the component.
+  }
+
   return (
-    <>
-      <input type="text" placeholder="Enter your name" onChange={(e) => setName(e.target.value)}/>
-      
-      <button onClick={onHandel}>Click me</button>
-            <h1>{output}</h1>
-    </>
+    <div style={{textAlign: 'center'}}>
+      <h1>Counter App</h1>
+      <br /> <br />
+
+      <button onClick={increment}>Increase</button>
+      <br /> <br />
+      <button>{count}</button>
+      <br /> <br />
+      <button onClick={decrease}>Decrease</button>
+    </div>
   )
 }
-export default App;
+
+export default App
